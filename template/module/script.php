@@ -14,9 +14,11 @@
 <script src="template/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
 <!--Customize Script -->
 <script type="text/javascript">
-	$(function(){
-		$('.nama-tamu').select2();
-		$('#checkin').datepicker();
-        $('#checkout').datepicker();
-	});
+$(function() {
+    $('.nama-tamu').select2();
+    $('#checkin').datepicker();
+    $('#checkout').datepicker();
+});
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

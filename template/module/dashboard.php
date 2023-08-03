@@ -16,7 +16,7 @@ include('component/com-transaksi.php');
             <div class="small-box bg-aqua">
                 <div class="inner">
                     <h3><?php echo $total_kamar; ?></h3>
-                    <p>Kamar Tersedia</p>
+                    <p>Jumlah Kamar</p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-bed"></i>
@@ -109,7 +109,7 @@ include('component/com-transaksi.php');
                         <li>
                             <h4>
                                 <b>Judul Pengumuman</b> <span class="badge bg-red">PENTING</span><br />
-                                <span class="small">Oleh : <b>Nama Operator</b> - 2015-9-2 00:00</span>
+                                <!-- <span class="small">Oleh : <b>Nama Operator</b> - 2015-9-2 00:00</span> -->
                             </h4>
                             <hr />
                         </li>

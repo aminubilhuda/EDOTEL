@@ -5,6 +5,9 @@ if(isset($_POST['laporan-transaksi'])) {
 	$laporan_transaksi=$database->select('transaksi_kamar','*',[
 		'tanggal[<>]'=>[$_POST['tanggal-start'],$_POST['tanggal-end']]
 		]);
+		
+		// header('Content-Type: application/json');
+		json_encode($laporan_transaksi);
 
 	$total_laporan_transaksi=$database->sum('transaksi_kamar','total_biaya_kamar',[
 		'tanggal[<>]'=>[$_POST['tanggal-start'],$_POST['tanggal-end']]
