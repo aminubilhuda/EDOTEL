@@ -38,6 +38,23 @@ $kamar_tersedia=$database->select('kamar',[
 	'status_kamar'=>'TERSEDIA'
 	]);
 
+$kamar_vc=$database->select('kamar',[
+	'[><]kamar_tipe'=>'id_kamar_tipe'
+	],[
+	'kamar.id_kamar',
+	'kamar.nomor_kamar',
+	'kamar.max_dewasa',
+	'kamar.max_anak',
+	'kamar.status_kamar',
+	'kamar_tipe.id_kamar_tipe',
+	'kamar_tipe.harga_malam',
+	'kamar_tipe.harga_orang',
+	'kamar_tipe.nama_kamar_tipe'
+	],[
+	'ORDER'=>'nomor_kamar',
+	'status_kamar'=>'VC'
+	]);
+
 $total_tersedia=$database->count('kamar',['status_kamar'=>'TERSEDIA']);
 
 $kamar_terpakai=$database->select('kamar',[
